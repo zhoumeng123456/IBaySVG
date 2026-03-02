@@ -17,6 +17,8 @@ tun_spl(spelist, calpha.list = NULL, g = 1, result, use_covariate = TRUE)
 
 \item{g}{:gene number}
 
+\item{result}{: preprocessed data produced by CTIG}
+
 \item{use_covariate}{:the logistic variable of using covariate. Default is TRUE which use covariates.}
 }
 \value{

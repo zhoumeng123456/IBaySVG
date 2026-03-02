@@ -704,6 +704,7 @@ VIZINB <- function(y,splinevalue,samplenumber,splinelevel,acrate=0.01,ak=1,dp=1.
 #' @param calpha.list :same to c_alpha
 #' @param g :gene number
 #' @param use_covariate :the logistic variable of using covariate. Default is TRUE which use covariates.
+#' @param result : preprocessed data produced by CTIG
 #'
 #' @return the number of basic function degree
 #' @export
@@ -886,11 +887,6 @@ CTIG<-function(spelist){
 #' @param psi_sigma_single :Hyperparameter of variance of \eqn{\psi}, controlling the contribution of covariates. Default is 1.
 #' @return the posterior mean of all parameters for gene g.
 #' @export
-#'
-#'
-#'
-#'
-#'
 #'
 #'
 citgtest <- function(g,result,c_alpha,spelist,acrate,gamma1,gamma2,min_iter,max_iter,speci_iter,use_covariate=TRUE,
