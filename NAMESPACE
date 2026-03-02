@@ -2,7 +2,7 @@
 
 export(BayFDR)
 export(CTIG)
-export(NBIMSVG)
+export(IBaySVG)
 export(VIZINB)
 export(citgtest)
 export(compu_phi)

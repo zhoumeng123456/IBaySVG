@@ -3,9 +3,9 @@
 
 
 ## Overview
-The "NBIMSVG" method propose a novel Bayesian hierarchical framework incorporating non-parametric spatial modeling and across-sample integration. It takes advantage of the non-parametric technique and develops an adaptive spatial process accommodating complex pattern discovery. A novel cross-sample bi-level shrinkage prior is further introduced for robust multi-sample SV gene detection, facilitating more effective information fusion. An efficient variational inference is developed for posterior inference ensuring computational scalability. This architecture synergistically addresses spatial complexity through adaptive pattern learning while maintaining biological interpretability. 
+The "IBaySVG" method propose a novel Bayesian hierarchical framework incorporating non-parametric spatial modeling and across-sample integration. It takes advantage of the non-parametric technique and develops an adaptive spatial process accommodating complex pattern discovery. A novel cross-sample bi-level shrinkage prior is further introduced for robust multi-sample SV gene detection, facilitating more effective information fusion. An efficient variational inference is developed for posterior inference ensuring computational scalability. This architecture synergistically addresses spatial complexity through adaptive pattern learning while maintaining biological interpretability. 
 
-`NBIMSVG` is implemented as an R package.
+`IBaySVG` is implemented as an R package.
 
 
 ## Installation
@@ -13,7 +13,7 @@ The package can be installed from github as follows, using R version 4.4 or abov
 
 ```{r}
 install.packages("remotes")
-remotes::install_github("zhoumeng123456/NBIMSVG")
+remotes::install_github("zhoumeng123456/IBaySVG")
 ```
 
 ## Example workflow
@@ -21,13 +21,13 @@ A short example workflow is shown below.
 
 **Load packages**
 ```{r}
-library(NBIMSVG)
+library(IBaySVG)
 ```
 
 **Generate example dataset**
 
 ```{r}
-# generate example dataset by sim_create() from Package NBIMSVG
+# generate example dataset by sim_create() from Package IBaySVG
 seed <- 123
 result1 <- sim_create(gene_size = 20, svgene_size = 0.5, sv_mark = c(0.8, 0.8), inf_size = 0.5, seed = seed)
 result2 <- sim_create(gene_size = 20, svgene_size = 0.5, sv_mark = c(0.5, 0.5), inf_size = 0.5, seed = seed + 1)
@@ -58,7 +58,7 @@ c_alpha <- list(result1[[3]],  result2[[3]],result3[[3]],result4[[3]])
 
 ```{r}
 # Run analysis (parallel with 4 cores)
-result <- NBIMSVG(spelist = spelist,c_alpha = c_alpha,num_cores = 4)
+result <- IBaySVG(spelist = spelist,c_alpha = c_alpha,num_cores = 4)
 ```
 
 ```{r}
