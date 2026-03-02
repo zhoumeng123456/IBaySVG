@@ -63,15 +63,15 @@ IBaySVG(
 
 \item{ak_domain}{:Hyperparameter of varience of beta to control the slab and spike prior for different degree. Default are 0.08,0.05,0.04 and 0.03 for degree 1-4, respectively.}
 
-\item{a_phi_single}{:Hyperparameter of the shape parameter $\phi$. Default is 0.001.}
+\item{a_phi_single}{:Hyperparameter of the shape parameter \eqn{\phi}. Default is 0.001.}
 
-\item{b_phi_single}{:Hyperparameter of the shape parameter $\phi$. Default is 0.001.}
+\item{b_phi_single}{:Hyperparameter of the shape parameter \eqn{\phi}. Default is 0.001.}
 
 \item{a_pi, b_pi}{Numeric. Hyperparameters for the Beta prior of the zero-inflation probability \eqn{\pi}. Defaults are 1 and 1.}
 
-\item{eta_sigma_single}{:Hyperparameter of variance of $\eta$, the baseline gene expression. Default is 1.}
+\item{eta_sigma_single}{:Hyperparameter of variance of \eqn{\eta}, the baseline gene expression. Default is 1.}
 
-\item{psi_sigma_single}{:Hyperparameter of variance of $\psi$, controlling the contribution of covariates. Default is 1.}
+\item{psi_sigma_single}{:Hyperparameter of variance of \eqn{\psi}, controlling the contribution of covariates. Default is 1.}
 }
 \value{
 A list with:
