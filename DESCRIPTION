@@ -1,4 +1,4 @@
-Package: NBIMSVG
+Package: IBaySVG
 Title: Integrated Bayesian non-parametric spatial modeling for cross-sample identification of spatially variable genes
 Version: 0.0.0.9000
 Authors@R: 
