@@ -103,7 +103,7 @@ spelist <- list(list(result1[[1]], result1[[2]]),
 c_alpha <- list(result1[[3]],  result2[[3]],result3[[3]],result4[[3]])# covariates
 # you can choose c_alpha <- NULL for the lack of cell-type covariates.
 # Run analysis (parallel with 4 cores)
-result=IBaySVG(spelist=spelist,c_alpha=c_alpha,num_cores=4)
+result=IBaySVG(spelist=spelist,c_alpha=c_alpha,num_cores=1)
 # Print key outputs:
 # 1. Posterior mean probabilities after maximization
 print("Posterior mean probabilities:")
